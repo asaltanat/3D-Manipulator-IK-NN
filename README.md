@@ -2,22 +2,22 @@
 
 ## Goal: Build a Neural Network for 5 DOF Manipulator Inverse Kinematcs
 
-### Initially with only one hidden layer and leakyRelu activation function the accuracy was 45%.
+#### Initially with only one hidden layer and leakyRelu activation function the accuracy was 45%.
 
-### With maxEpochs = 10  and miniBatchSize = 100 the minimum accuracy (29%) was with 3 hidden layers with 256:512:256 neurons.
+#### With maxEpochs = 10  and miniBatchSize = 100 the minimum accuracy (29%) was with 3 hidden layers with 256:512:256 neurons.
 
-### Additionally changing the activation function to reLu did not decrease the accuracy, therefore LeakyRelu was chosen as the best fit activation layer.
+#### Additionally changing the activation function to reLu did not decrease the accuracy, therefore LeakyRelu was chosen as the best fit activation layer.
 
-### INcreasing the number of hidden layers and neurons also did not help to improve the NN, so the we tried to reduce error by tuning the training options.
+#### INcreasing the number of hidden layers and neurons also did not help to improve the NN, so the we tried to reduce error by tuning the training options.
 
-### I tried to change the optimizer function, added L2Regularization and changed the value of epochs:
+#### I tried to change the optimizer function, added L2Regularization and changed the value of epochs:
 
 maxEpochs = 50;
 miniBatchSize = 500; 
 
-### These changes helped to reduce an error to 20%
+#### These changes helped to reduce an error to 20%
 
-### Finally the network with 4 hidden layers with 256:512:512:256 neurons, LeakyRelu activation function was chosen as the best architecture with an accuracy of 19%. 
+#### Finally the network with 4 hidden layers with 256:512:512:256 neurons, LeakyRelu activation function was chosen as the best architecture with an accuracy of 19%. 
 
 ## 
 | #	| NN	| activation	| a|
